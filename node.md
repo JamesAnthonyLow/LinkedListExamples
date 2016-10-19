@@ -1,3 +1,4 @@
+###Ruby
 ```ruby
 class Node
   attr_accessor :next, :data
@@ -7,7 +8,7 @@ class Node
   end
 end
 ```
-
+###C
 ```c
 #include <stdlib.h>
 #include <stdio.h>

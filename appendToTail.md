@@ -1,3 +1,4 @@
+###Ruby
 ```ruby
 class LinkedList
   def initialize
@@ -15,7 +16,7 @@ class LinkedList
   end
 end
 ```
-
+###C
 ```c
 struct Node * appendToTail(struct Node * head, struct Node * n)
 {
