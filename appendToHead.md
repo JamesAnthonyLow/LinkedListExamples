@@ -1,9 +1,9 @@
 ###Ruby
 ```ruby
-def appendToHead node
-node.next = @head
-@head = node
-end
+  def appendToHead node
+    node.next = @head
+    @head = node
+  end
 ```
 ###C
 ```c
