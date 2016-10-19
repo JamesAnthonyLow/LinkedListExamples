@@ -27,6 +27,8 @@ class LinkedList
     node.next = @head
     @head = node
   end
+  def deleteByData data
+  end
   def to_s
     "#{@head}"
   end
