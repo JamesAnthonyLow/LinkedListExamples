@@ -32,6 +32,12 @@ struct Node * appendToTail(struct Node * head, struct Node * n)
   return head;
 }
 
+struct Node * appendToHead(struct Node * head, struct Node * n)
+{
+  n->next = head;
+  return n;
+}
+
 void printList(struct Node * head)
 {
   if( ! head ) {
@@ -45,9 +51,9 @@ void printList(struct Node * head)
 int main(){
   struct Node * head;
 
-  head = appendToTail(NULL, newNode(1));
-  head = appendToTail(head, newNode(2));
-  head = appendToTail(head, newNode(3));
-  head = appendToTail(head, newNode(4));
+  head = appendToHead(NULL, newNode(1));
+  head = appendToHead(head, newNode(2));
+  head = appendToHead(head, newNode(3));
+  head = appendToHead(head, newNode(4));
   printList(head);
 }

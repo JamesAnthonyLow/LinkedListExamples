@@ -4,6 +4,9 @@ class Node
     @data = data
     @next = nil
   end
+  def to_s
+    "Node( #{@data} ) -> #{@next ? @next : "NULL"}"
+  end
 end
 
 class LinkedList
@@ -20,13 +23,20 @@ class LinkedList
     end
     curr.next = node
   end
+  def appendToHead node
+    node.next = @head
+    @head = node
+  end
+  def to_s
+    "#{@head}"
+  end
 end
 
 l = LinkedList.new
 
-l.appendToTail(Node.new(1))
-l.appendToTail(Node.new(2))
-l.appendToTail(Node.new(3))
-l.appendToTail(Node.new(4))
+l.appendToHead(Node.new(1))
+l.appendToHead(Node.new(2))
+l.appendToHead(Node.new(3))
+l.appendToHead(Node.new(4))
 
-p l
+puts l
